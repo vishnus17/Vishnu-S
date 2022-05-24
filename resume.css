@@ -233,3 +233,14 @@
 	 width: 65%;
 	 animation: skill_6 0.6s ease;
 }
+@media (min-width: 320px) and (max-width: 999px) {
+
+	// Mobile and tablet CSS
+  
+  }
+  
+  @media (min-width: 1000px) {
+  
+	// Laptop/desktop CSS
+  
+  }
