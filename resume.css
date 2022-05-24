@@ -42,12 +42,12 @@
 }
 
  .profile .name-wrapper {
-	 float: right;
-	 width: 50%;
+	 float: top;
+	 width: 80%;
 }
  .profile h1 {
-	 font-size: 2.5em;
-	 text-align: left;
+	 font-size: 3.5em;
+	 text-align: center;
 	 font-family: 'Varela Round', sans-serif;
 	 color: #4a4e51;
 	 text-transform: uppercase;
