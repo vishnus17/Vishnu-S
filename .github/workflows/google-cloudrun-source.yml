@@ -1,10 +1,4 @@
-
-# 4. Create GitHub secrets for WIF_PROVIDER and WIF_SERVICE_ACCOUNT
-#
-# 5. Change the values for the SERVICE and REGION environment variables (below).
-
 name: Deploy to Cloud Run from Source
-
 on:
   push:
     branches:
@@ -17,7 +11,6 @@ env:
   
 jobs:
   deploy:
-    # Add 'id-token' with the intended permissions for workload identity federation
     permissions:
       contents: 'read'
       id-token: 'write'
@@ -31,7 +24,7 @@ jobs:
         id: auth
         uses: 'google-github-actions/auth@v0'
         with:
-         credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
+          credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
 
       - name: Deploy to Cloud Run
         id: deploy
